@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "StateManagement/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.ProtectedBrowserStorage": "0.1.0-alpha.19521.1",
+          "Prism.Core": "8.1.97"
+        },
+        "runtime": {
+          "StateManagement.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.ProtectedBrowserStorage/0.1.0-alpha.19521.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.ProtectedBrowserStorage.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.100.19.52101"
+          }
+        }
+      },
+      "Prism.Core/8.1.97": {
+        "runtime": {
+          "lib/net5.0/Prism.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StateManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.ProtectedBrowserStorage/0.1.0-alpha.19521.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P81qtHhl6KXr+TCm5qfCxkhFxkGtALmY3bNcraKX6rPGMbPMBGi9mIeCyUZVmpzIVkD1ocUfuRqiob05jR3hUA==",
+      "path": "microsoft.aspnetcore.protectedbrowserstorage/0.1.0-alpha.19521.1",
+      "hashPath": "microsoft.aspnetcore.protectedbrowserstorage.0.1.0-alpha.19521.1.nupkg.sha512"
+    },
+    "Prism.Core/8.1.97": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EP5zrvWddw3eSq25Y7hHnDYdmLZEC2Z/gMrvmHzUuLbitmA1UaS7wQUlSwNr9Km8lzJNCvytFnaGBEFukHgoHg==",
+      "path": "prism.core/8.1.97",
+      "hashPath": "prism.core.8.1.97.nupkg.sha512"
+    }
+  }
+}

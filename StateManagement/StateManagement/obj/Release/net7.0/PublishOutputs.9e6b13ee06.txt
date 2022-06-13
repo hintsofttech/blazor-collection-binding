@@ -1,0 +1,9 @@
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\StateManagement.exe
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\appsettings.json
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\StateManagement.dll
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\StateManagement.deps.json
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\StateManagement.runtimeconfig.json
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\StateManagement.pdb
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.ProtectedBrowserStorage.dll
+E:\StateManagement\StateManagement\obj\Release\net7.0\PubTmp\Out\Prism.dll

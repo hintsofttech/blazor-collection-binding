@@ -1,0 +1,58 @@
+﻿@page "/customerForm"
+@inject Customer[] customers
+@inject IJSRuntime js
+
+<h1>Customer Entry Form</h1>
+
+<input id="focusedInput" @bind="@customers[0].LastFocusedId" hidden/>
+
+<input id="txtId" @bind="@customers[0].Id" @onfocus='()=>LastFocused("txtId")'/>
+<input id="txtName" @bind="@customers[0].Name" @onfocus='()=>LastFocused("txtName")'/>
+<input id="txtAddress" @bind="@customers[0].Address" @onfocus='()=>LastFocused("txtAddress")'/>
+
+<br/>
+<input id="txtId1" @bind="@customers[1].Id" @onfocus='()=>LastFocused("txtId1")'/>
+<input id="txtName1" @bind="@customers[1].Name" @onfocus='()=>LastFocused("txtName1")'/>
+<input id="txtAddress1" @bind="@customers[1].Address" @onfocus='()=>LastFocused("txtAddress1")'/>
+
+<br/>
+<input id="txtId2" @bind="@customers[2].Id" @onfocus='()=>LastFocused("txtId2")'/>
+<input id="txtName2" @bind="@customers[2].Name" @onfocus='()=>LastFocused("txtName2")'/>
+<input id="txtAddress2" @bind="@customers[2].Address" @onfocus='()=>LastFocused("txtAddress2")'/>
+
+
+@code 
+{
+    //protected override Task OnParametersSetAsync()
+    //{
+    //        customers = new Customer[3];
+    //        customers[0] = new Customer() { };
+    //        customers[1] = new Customer() { };
+    //        customers[2] = new Customer() { };
+    //        return base.OnParametersSetAsync();
+    //}
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if(customers[0].LastFocusedId==null)
+                await js.InvokeVoidAsync("Focus", "txtId");
+            else
+                await js.InvokeVoidAsync("Focus", customers[0].LastFocusedId);
+        }
+    }
+
+    void LastFocused(string elementId)
+    {
+        customers[0].LastFocusedId = elementId;
+    }
+    
+}
+<script suppress-error="BL9992">
+function Focus(elementId) 
+{
+    setTimeout(function(){
+        $("#"+elementId).focus();
+    },100);
+}
+</script>

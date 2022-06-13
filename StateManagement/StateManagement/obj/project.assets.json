@@ -1,0 +1,157 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Microsoft.AspNetCore.ProtectedBrowserStorage/0.1.0-alpha.19521.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.ProtectedBrowserStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.ProtectedBrowserStorage.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.ProtectedBrowserStorage.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.ProtectedBrowserStorage.props": {}
+        }
+      },
+      "Prism.Core/8.1.97": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Prism.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.ProtectedBrowserStorage/0.1.0-alpha.19521.1": {
+      "sha512": "P81qtHhl6KXr+TCm5qfCxkhFxkGtALmY3bNcraKX6rPGMbPMBGi9mIeCyUZVmpzIVkD1ocUfuRqiob05jR3hUA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.protectedbrowserstorage/0.1.0-alpha.19521.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/Microsoft.AspNetCore.ProtectedBrowserStorage.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Microsoft.AspNetCore.ProtectedBrowserStorage.props",
+        "buildTransitive/Microsoft.AspNetCore.ProtectedBrowserStorage.props",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.ProtectedBrowserStorage.dll",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.ProtectedBrowserStorage.pdb",
+        "microsoft.aspnetcore.protectedbrowserstorage.0.1.0-alpha.19521.1.nupkg.sha512",
+        "microsoft.aspnetcore.protectedbrowserstorage.nuspec",
+        "staticwebassets/protectedBrowserStorage.js"
+      ]
+    },
+    "Prism.Core/8.1.97": {
+      "sha512": "EP5zrvWddw3eSq25Y7hHnDYdmLZEC2Z/gMrvmHzUuLbitmA1UaS7wQUlSwNr9Km8lzJNCvytFnaGBEFukHgoHg==",
+      "type": "package",
+      "path": "prism.core/8.1.97",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net461/Prism.dll",
+        "lib/net461/Prism.pdb",
+        "lib/net461/Prism.xml",
+        "lib/net47/Prism.dll",
+        "lib/net47/Prism.pdb",
+        "lib/net47/Prism.xml",
+        "lib/net5.0/Prism.dll",
+        "lib/net5.0/Prism.pdb",
+        "lib/net5.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "prism-logo.png",
+        "prism.core.8.1.97.nupkg.sha512",
+        "prism.core.nuspec",
+        "readme.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Microsoft.AspNetCore.ProtectedBrowserStorage >= 0.1.0-alpha.19521.1",
+      "Prism.Core >= 8.1.97"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\StateManagement\\StateManagement\\StateManagement.csproj",
+      "projectName": "StateManagement",
+      "projectPath": "E:\\StateManagement\\StateManagement\\StateManagement.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\StateManagement\\StateManagement\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.ProtectedBrowserStorage": {
+            "target": "Package",
+            "version": "[0.1.0-alpha.19521.1, )"
+          },
+          "Prism.Core": {
+            "target": "Package",
+            "version": "[8.1.97, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.4.22252.9\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
